@@ -14,5 +14,6 @@ module.exports = {
     'linebreak-style': ['error', 'windows'],
     'no-console': 'off',
     'class-methods-use-this': 'off',
+    'no-param-reassign': 'off',
   },
 };
