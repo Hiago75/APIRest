@@ -24,7 +24,7 @@ class AlunoController {
 
       if (!id) {
         return res.status(400).json({
-          errors: ['Faltando ID'],
+          errors: ['Missing ID'],
         });
       }
 
@@ -32,7 +32,7 @@ class AlunoController {
 
       if (!aluno) {
         return res.status(400).json({
-          errors: ['Este aluno não existe'],
+          errors: ['Student not found'],
         });
       }
 
@@ -55,7 +55,7 @@ class AlunoController {
 
       if (!id) {
         return res.status(400).json({
-          errors: ['Faltando ID'],
+          errors: ['Missing ID'],
         });
       }
 
@@ -63,7 +63,7 @@ class AlunoController {
 
       if (!aluno) {
         return res.status(400).json({
-          errors: ['Este aluno não existe'],
+          errors: ['Student not found'],
         });
       }
 
@@ -87,7 +87,7 @@ class AlunoController {
 
       if (!id) {
         return res.status(400).json({
-          errors: ['Faltando ID'],
+          errors: ['Missing ID'],
         });
       }
 
@@ -95,7 +95,7 @@ class AlunoController {
 
       if (!aluno) {
         return res.status(400).json({
-          errors: ['Este aluno não existe'],
+          errors: ['Student not found'],
         });
       }
 

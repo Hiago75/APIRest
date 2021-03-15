@@ -6,7 +6,7 @@ export default async (req, res, next) => {
 
   if (!authorization) {
     return res.status(401).json({
-      errors: ['Você precisa estar logado para acessar esta pagina'],
+      errors: ['You must be logged in'],
     });
   }
 
@@ -24,7 +24,7 @@ export default async (req, res, next) => {
 
     if (!user) {
       return res.status(401).json({
-        errors: ['Usuário inválido'],
+        errors: ['Invalid user'],
       });
     }
 
@@ -34,7 +34,7 @@ export default async (req, res, next) => {
     return next();
   } catch (e) {
     return res.status(401).json({
-      errors: ['Token expirado ou inválido'],
+      errors: ['Expired or invalid Token'],
     });
   }
 };

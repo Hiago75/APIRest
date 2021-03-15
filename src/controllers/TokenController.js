@@ -7,7 +7,7 @@ class TokenController {
 
     if (!email || !password) {
       return res.status(401).json({
-        errors: ['Credenciais inválidas'],
+        errors: ['Invalid credentials'],
       });
     }
 
@@ -15,13 +15,13 @@ class TokenController {
 
     if (!user) {
       return res.status(401).json({
-        errors: ['Usuário não existe'],
+        errors: ['User not found'],
       });
     }
 
     if (!(await user.passwordIsValid(password))) {
       return res.status(401).json({
-        errors: ['Senha inválida'],
+        errors: ['Invalid password'],
       });
     }
 
