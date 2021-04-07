@@ -14,7 +14,8 @@ import photoRoutes from './routes/photoRoutes';
 dotenv.config();
 
 const whitelist = [
-  'http://localhost:3000'
+  'http://localhost:3000',
+  'http://34.95.161.242'
 ];
 
 const corsOptions = {
