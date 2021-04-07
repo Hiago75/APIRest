@@ -14,7 +14,8 @@ var _photoRoutes = require('./routes/photoRoutes'); var _photoRoutes2 = _interop
 _dotenv2.default.config();
 
 const whitelist = [
-  'http://localhost:3000'
+  'http://localhost:3000',
+  'http://34.95.161.242'
 ];
 
 const corsOptions = {
